@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function alrt(name){
+            var prt = name + ", are you sure?";
+            if(confirm(prt) == true){
+                location.href="process_pyinstaller.py?id=shutdown /p";
+            } else{
+                return false;
+            }
+        }
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gojomog</title>
+    <style>
+        h1{
+            font-size: 45px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="document.py" target="_blank">document</a></h1>
+    <h1><a href="pyinstaller.html" target="_blank">pyinstaller</a></h1>
+    <h1><a href="coding.php" target="_blank">coding</a></h1>
+    <h1><a href="console.php" target="_blank">console</a></h1>
+    <h1><a onclick="alrt('shutdown')"><br>shutdown</a></h1>
+    
+</body>
+</html>
